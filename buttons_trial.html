@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>Button trial</title>
+<style>
+.b1.b1c,.b2.b2c,.b3.b3c{
+font-size: 16px;
+  border: 5px solid blue;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0;
+}
+.b1:hover .b1c,.b3:hover .b3c{
+background-color:maroon;
+}
+.b2:hover .b2c
+{
+background-color:blue;
+}
+.b1list,.b2list,.b3list{
+display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.b1list a ,.b2list a ,.b3list a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.b1list a:hover,.b2list a:hover,.b3list a:hover {
+  background-color: #bbb;
+}
+
+/* Show the dropdown menu on hover */
+.b1:hover .b1list,.b2:hover .b2list,.b3:hover .b3list{
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class="hi">
+<div class="b1">
+<button class="b1c">D1</button>
+<div class="b1list">
+<a href="https://www.google.com/">l1</a>
+<a href="https://www.google.com/">l2</a>
+</div>
+</div>
+<div class="b2">
+<button class="b2c">D1</button>
+<div class="b2list">
+<a href="https://www.google.com/">l11</a>
+<a href="https://www.google.com/">l22</a>
+</div>
+</div>
+<div class="b3">
+<button class="b3c">D1</button>
+<div class="b3list">
+<a href="https://www.google.com/">l111</a>
+<a href="https://www.google.com/">l222</a>
+</div>
+</div>
+</div>
+</body>
+</html>

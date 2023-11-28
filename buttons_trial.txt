@@ -1,0 +1,16 @@
+<html>
+<head>
+<title>Button trial</title>
+</head>
+<body>
+<div class="hi">
+<div class="b1">
+<button class="b1c">D1</button>
+<div class="b1list">
+<a href="www.google.com">l1</a>
+<a href="www.google.com">l2</a>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {
+display: none;
+}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+align:center;
+}
+#a{
+text-decoration:none;
+color:green;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.headline{
+height:200px;
+width:100%;
+background: radial-gradient(circle at center, 
+    white, rgb(90,90, 200),Midnightblue),100% ;
+}
+#heading{
+text-shadow: 2px 2px blue;
+position: absolute;
+  left: 10px;
+  top: 1px;
+}
+#moto
+{
+position: absolute;
+  right: 10px;
+  top: 45px;
+}
+#logo
+{
+display: flex;
+justify-content:center;
+}
+#img{
+border:10px ridge;
+}
+.logobeside {
+ display: grid;
+ align-items: center; 
+ grid-template-columns: 1fr 1fr 1fr;
+ column-gap: 10px;
+ position:absolute;
+ top:90px;
+ left:580px;
+}
+
+.logo {
+  max-width: 100px;
+  max-height:100px;
+}
+
+.helptext {
+  font-size: 20px;
+}
+.navbar {
+  overflow: hidden;
+  background-color: MidnightBlue;
+  font-family: Arial;
+  position:absolute;
+  top:200px;
+  width:99%;
+}
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.dropdown,.dropdown1{
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn,.dropdown1 .dropbtn1 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.navbar a:hover, .dropdown:hover .dropbtn,.dropdown1:hover .dropbtn1{
+  background-color: grey;
+}
+.dropdown-content,.dropdown-content1{
+  display: none;
+  position: fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a ,.dropdown-content1 a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover,.dropdown-content1 a:hover{
+  background-color: black;
+  color:white;
+}
+.dropdown:hover .dropdown-content,.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
+</style>
+</head>
+<body>
+<div class="headline">
+<h1 id="heading" style="color:brown;font-size:40px;"><b>MUNICIPAL CORPORATION COMPLAINT MANAGEMENT SYSTEM-AP</b></h1>
+<p id="moto" style="color:yellow;text-align:right;font-family:cursive;font-size:20px">-keen to serve you better</p>
+<div class="logobeside">
+<div id = "logo">
+<img src="logo.jpg" width="90px" height="90px">
+</div>
+<div class="helptext">
+<p style="color:yellow;text-align:right;font-family:cursive;"><br><span style="color:black;">Helpline No:<span style="color:yellow;">0846995,0846996</span></span></p>
+</div>
+</div>
+</div>
+<div class="navbar">
+  <a href="slideshow.html">Home</a>
+  <a href="https://www.youtube.com/">About MCCMS</a>
+  <div class="dropdown">
+    <button class="dropbtn">Governing Bodies
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://kins4444.github.io/sample_trial1/mayor_table.html">Hon'ble Mayor</a>
+      <a href="Secretary.html">Secretary</a>
+      <a href="https://www.youtube.com/">Link 3</a>
+    </div>
+  </div>
+ <a href="circulars.html">Orders & Circulars</a>
+ <div class="dropdown1">
+    <button class="dropbtn1">Contact Us
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content1">
+      <a href="https://kins4444.github.io/logo/samplegit.html">Link 1</a>
+      <a href="https://www.youtube.com/">Link 2</a>
+      <a href="https://www.youtube.com/">Link 3</a>
+    </div>
+  </div>
+</div>
+<div class="mySlides fade" style="text-align:center;position:absolute;top:250px;left:330px;">
+  <img src="plastic_image.jpg" width="900px" height="300px" id="img">
+</div>
+<div class="mySlides fade" style="text-align:center;position:absolute;top:250px;left:330px;">
+  <img src="greencity.jpg" width="900px" height="300px" id="img">
+</div>
+
+<div class="mySlides fade" style="text-align:center;position:absolute;top:250px;left:330px;">
+  <img src="Corornavirus_Prevention_Steps.jpg" width="900px" height="300px" id="img">
+</div>
+<div class="mySlides fade" style="text-align:center;position:absolute;top:250px;left:330px;">
+  <img src="img1.jpg" width="900px" height="300px" id="img">
+</div>
+<div class="mySlides fade" style="text-align:center;position:absolute;top:250px;left:330px;">
+  <img src="img2.jpg" width="900px" height="300px" id="img">
+</div>
+<div class="mySlides fade" style="text-align:center;position:absolute;top:250px;left:330px;">
+  <img src="img3.jpg" width="900px" height="300px" id="img">
+</div>
+<br>
+
+<div style="text-align:center;position:absolute;top:550px;left:740px">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<p style="color:red;position:relative;top:370px"><marquee>Welcome to Andhra Pradesh Municipal Corporation</marquee></p>
+<a href="type_of_login.html" id="a"><p style="text-align:center;position:relative;top:370px">Click here for Login/Signup</p></a>
+</body>
+</html> 
